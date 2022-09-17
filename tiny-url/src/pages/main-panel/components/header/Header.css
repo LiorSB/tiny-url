@@ -1,0 +1,10 @@
+.header-title-container{
+    background-color: #61dafb;
+    display: flex;
+    padding-block: 30px;
+    justify-content: center;
+}
+.header-title{
+    color: white;
+    font-size: 50px;
+}
