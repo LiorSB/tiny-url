@@ -21,6 +21,7 @@
     background: white;
 }
 .form-input-style{
+    width: 300px;
     padding:5px
 }
 .button-submit-form{
