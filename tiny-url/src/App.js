@@ -3,7 +3,7 @@ import {MainPanel} from "./pages/main-panel/MainPanel";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-container">
     <MainPanel/>
     </div>
   );
