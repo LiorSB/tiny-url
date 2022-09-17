@@ -1,0 +1,34 @@
+.form-container{
+    margin-top: 40px;
+    background: white;
+    border-radius: 8px;
+    border: solid 1px lightgray;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+.form-style{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-title-style{
+    width: auto;
+    background: white;
+}
+.form-input-style{
+    width: 300px;
+    padding:5px
+}
+.button-submit-form{
+    background: cornflowerblue;
+    border: lightgray solid 1px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    padding: 20px;
+}

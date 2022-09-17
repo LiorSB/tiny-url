@@ -1,0 +1,11 @@
+.header-title-container{
+    background-color: cornflowerblue;
+    display: flex;
+    padding-block: 30px;
+    justify-content: center;
+    width: 100%;
+}
+.header-title{
+    color: white;
+    font-size: 50px;
+}
