@@ -10,7 +10,7 @@ export const getTinyUrl = async () => {
     }
 }
 export const postCreateTinyUrl = async (originalUrl,setTinyUrlObj) => {
-    console.log("start post")
+    console.log("postCreateTinyUrl")
     try {
         const url = `http://localhost:8000/create-tiny-url`;
         const response = await fetch(url, {
@@ -30,8 +30,8 @@ export const postCreateTinyUrl = async (originalUrl,setTinyUrlObj) => {
         console.log(err)
     }
 }
-export const postRedirectBySendTinyUrl = async (originalUrl,setTinyUrlObj) => {
-    console.log("start post")
+export const postRedirectBySendTinyUrl = async (tinyUrl,setTinyUrlObj) => {
+    console.log("postRedirectBySendTinyUrl")
     try {
         const url = `http://localhost:8000/get-original-url`;
         const response = await fetch(url, {
@@ -41,7 +41,7 @@ export const postRedirectBySendTinyUrl = async (originalUrl,setTinyUrlObj) => {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                tinyUrl: originalUrl,
+                tinyUrl: tinyUrl,
             })
         });
         const responseJson = await response.json();

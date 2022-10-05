@@ -17,7 +17,8 @@
 }
 .form-title-style{
     width: auto;
-    background: white;
+    border-bottom: solid black 1px;
+    padding-block: 6px;
 }
 .form-input-style{
     width: 300px;
@@ -33,11 +34,15 @@
 }
 .tiny-url-container{
     padding: 20px;
-display: flex;
+    display: flex;
     flex-direction: column;
     gap: 10px;
-    /*background-color: lightgreen;*/
-    border: solid 1px black;
+    border: solid 1px cornflowerblue;
     border-radius: 4px;
     color: cornflowerblue;
+}
+.answer-container{
+    border-radius: 4px;
+    margin-top: 10px;
+    background: white;
 }
