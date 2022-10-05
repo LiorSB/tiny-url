@@ -1,10 +1,15 @@
 import json
 from http.server import HTTPServer, BaseHTTPRequestHandler
-
 from datetime import date
+# from pymongo import MongoClient
 
+
+
+# client = MongoClient("mongodb+srv://omrikellner6:omri12345678@cluster0.zd9lug5.mongodb.net/test")
+# mydatabase = client.TinyURLProject
+# mycollection = mydatabase["URL"]
+# print(client)
 today = date.today().strftime("%m/%d/%Y")
-
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -53,7 +58,7 @@ class MyServer(BaseHTTPRequestHandler):
             data_string = self.rfile.read(int(self.headers['Content-Length']))
             print(data_string)
             body = json.loads(data_string)
-            response = json.dumps({"tinyUrl": body.get("srcUrl"), "srcUrl": body.get("srcUrl"),
+            response = json.dumps({"tinyUrl": body.get("tinyUrl"), "srcUrl": body.get("tinyUrl"),
                                    "creationDate": today})  # tinyurl: here need to call hash function for generate tinyUrl
             self.wfile.write(response.encode('utf-8'))
 
