@@ -5,7 +5,6 @@ from datetime import date
 
 
 
-# client = MongoClient("mongodb+srv://omrikellner6:omri12345678@cluster0.zd9lug5.mongodb.net/test")
 # mydatabase = client.TinyURLProject
 # mycollection = mydatabase["URL"]
 # print(client)
