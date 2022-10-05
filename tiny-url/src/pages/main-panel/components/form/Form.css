@@ -6,9 +6,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 200px;
     text-align: center;
-    justify-content: center;
+    justify-content: start;
     padding: 10px;
 }
 .form-style{
@@ -18,7 +17,8 @@
 }
 .form-title-style{
     width: auto;
-    background: white;
+    border-bottom: solid black 1px;
+    padding-block: 6px;
 }
 .form-input-style{
     width: 300px;
@@ -31,4 +31,18 @@
     cursor: pointer;
 
     padding: 20px;
+}
+.tiny-url-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 1px cornflowerblue;
+    border-radius: 4px;
+    color: cornflowerblue;
+}
+.answer-container{
+    border-radius: 4px;
+    margin-top: 10px;
+    background: white;
 }

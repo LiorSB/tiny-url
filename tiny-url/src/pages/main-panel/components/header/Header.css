@@ -1,9 +1,11 @@
 .header-title-container{
     background-color: cornflowerblue;
     display: flex;
-    padding-block: 30px;
+    flex-direction: column;
+    padding-block: 20px;
     justify-content: center;
     width: 100%;
+    gap: 10px;
 }
 .header-title{
     color: white;
